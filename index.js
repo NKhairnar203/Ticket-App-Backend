@@ -13,7 +13,7 @@ dotenv.config();
 
 // cors middleware
 const corsOptions = {
-  origin: "http://127.0.0.1:5173", // Allow only this domain
+  origin: process.env.FRONTEND_LINK, // Allow only this domain
 };
 app.use(cors(corsOptions));
 
